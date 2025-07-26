@@ -11,7 +11,6 @@
 <body>
     <header>
         <h1>Biblioteca Publica Jose Hernandez</h1>
-
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -29,9 +28,11 @@
         </section>
     </main>
 
-    <section  class="section" id="#catalogo">
-            <h2>Catálogo</h2>
-            <p>Explora nuestra colección de libros, revistas y recursos digitales</p>
+    <section  class="section">
+            <div class="section">
+                <h2>Catálogo</h2>
+                <p>Explora nuestra colección de libros, revistas y recursos digitales</p>
+            </div>
             
             <div class="search-container">
                 <input type="text"  placeholder="Buscar por título, autor o categoría...">
@@ -46,10 +47,81 @@
                         <option value="infantil">Infantil</option>
                     </select>
                     <select id="filter-availability">
-                        <option value="">Disponibilidad</option>
-                        <option value="available">Disponible</option>
+                        <option value="available">Disponibles</option>
                         <option value="loaned">En préstamo</option>
                     </select>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <div class="section-header">
+                <h2>Contacto</h2>
+                <p>Estamos aquí para ayudarte</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <h3>Dirección</h3>
+                        <p>Cordoba 69</p>
+                        <p>Entre Rosario y Av. Pedro Ferré</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <h3>Teléfono</h3>
+                        <p>+34 91 123 45 67</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <h3>Email</h3>
+                        <p>bibliojh@gmail.com</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">🕒</div>
+                        <h3>Horario</h3>
+                        <p>Lunes a Viernes: 9:00 - 20:00</p>
+                        <p>Sábados: 10:00 - 14:00</p>
+                        <p>Domingos: Cerrado</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envíanos un mensaje</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Nombre</label>
+                            <input type="text" id="contact-name" name="contact-name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="contact-email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-subject">Asunto</label>
+                            <select id="contact-subject" name="contact-subject" required>
+                                <option value="">Seleccionar</option>
+                                <option value="info">Información general</option>
+                                <option value="membership">Membresías</option>
+                                <option value="activities">Actividades</option>
+                                <option value="suggestion">Sugerencia</option>
+                                <option value="complaint">Queja o reclamación</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message">Mensaje</label>
+                            <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn primary-btn">Enviar Mensaje</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -59,7 +131,7 @@
             <div class="footer-section">
                 <h3>Biblioteca Publica Jose Hernandez</h3>
                 <p>Tu espacio de conocimiento, cultura y comunidad.</p>
-                <div class="social-links" id="contacto">
+                <div class="social-links">
                     <a href="#"><i class="icon fa-brands fa-facebook"></i></a>
                     <a href="mailto:bibliojh@gmail.com" class="icon fa-solid fa-envelope"></a>
                     <a href="https://instagram.com/bibliotecaferre" class="icon fa-brands fa-instagram"></a>
